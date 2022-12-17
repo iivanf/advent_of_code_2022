@@ -5,3 +5,41 @@ version = 3
 [[package]]
 name = "advent_of_code_2022"
 version = "0.1.0"
+dependencies = [
+ "itermore",
+]
+
+[[package]]
+name = "arrays"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2dbdbb2877d26e0647c6b8125802b2ecf2dc2a28d864dde41e6f9b9a54da08fe"
+
+[[package]]
+name = "iterchunks"
+version = "0.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ceb61464343bc874be283540bf6bb148d6e5b61023bc5acbb9f969b56c806780"
+dependencies = [
+ "arrays",
+]
+
+[[package]]
+name = "itermore"
+version = "0.5.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "0331e230609e456fccf9d3b3d4f273a1b3f6b601ed37e943dc197fe5d24bb4da"
+dependencies = [
+ "arrays",
+ "iterchunks",
+ "iterwindows",
+]
+
+[[package]]
+name = "iterwindows"
+version = "0.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3cbf3a88c019a9667dbea976f47cf797ffc8d765c53d893e60f27576be6333b0"
+dependencies = [
+ "arrays",
+]
